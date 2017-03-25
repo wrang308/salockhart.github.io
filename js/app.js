@@ -1,4 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
+"use strict";
+
+$(document).ready(function() {
+	$("a").click(function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			const hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function() {
+				window.location.hash = hash;
+			});
+		}
+	});
+
 	particlesJS('particles-js', {
 		"particles": {
 			"number": {
@@ -110,5 +124,4 @@ document.addEventListener("DOMContentLoaded", function() {
 		},
 		"retina_detect": true
 	});
-
-}, false);
+});
