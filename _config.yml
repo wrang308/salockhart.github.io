@@ -6,17 +6,16 @@ description: A blog about me.
 
 # User settings
 username: Alex Lockhart
+user_subtitle: Full Stack Software Developer
 user_description: Halifax, NS
-user_title: Full Stack Software Developer
 email: salexlockhart@gmail.com
 twitter_username: salexlockhart
 github_username:  salockhart
+linkedin_username:  salockhart
 
 # Google-analytics
 google-analytics:
   id: ""
-
-exclude: ['package.json', 'node_modules']
 
 sass:
   sass_dir: css

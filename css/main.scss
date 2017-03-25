@@ -13,6 +13,29 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  display: block;
+  line-height: 1;
+  letter-spacing: -.1rem;
+}
+
+h2 {
+  font-size: 20px;
+  display: block;
+  line-height: 1;
+  margin: 5px 0 10px 0;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
 @-webkit-keyframes pulse {
     from {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -72,7 +95,12 @@ body {
   }
 }
 
-.content {
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.title {
   z-index: 1;
   text-align: center;
   color:#FFF;
@@ -83,19 +111,12 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    font-size: 50px;
-    display: block;
-    line-height: 1;
     @media only screen and (min-width:$cut){
       margin: 0;
       font-size: 100px;
     }
   }
-  .site-description {
-    font-size: 20px;
-    display: block;
-    line-height: 1;
-    margin: 5px 0 10px 0;
+  .site-subtitle {
     @media only screen and (min-width:$cut){
       font-size: 40px;
     }
@@ -176,46 +197,53 @@ body {
   }
 }
 
-.user {
+.about {
   text-align: center;
-  margin: 20px auto;
-  font-size: 60px;
-  p {
-    font-size: 16px;
+}
+
+.skills {
+  .skill {
+    padding: 0 10px;
   }
-  @media only screen and (min-width: $cut) {
+  h4 {
+    text-align: center;
+  }
+  i {
+    text-align: center;
     font-size: 75px;
   }
 }
 
-.user-details {
-  text-align: center;
-  font-size: 16px;
-  margin: 10px auto;
+.experience {
+
 }
 
-.user-projects {
-  margin: 40px auto;
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  h5 {
-    margin: 0;
-  }
-  li {
-    color: $main;
-    font-size: 1.1rem;
-  }
-  p {
-    margin-right: 5px;
-  }
-}
-
-.images {
-  @media only screen and (min-width: $cut) {
-    float: right;
+.projects {
+  .project {
+    margin: 20px 0;
+    h4 {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    img {
+      max-width: 100%;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 0;
+      li {
+        float: left;
+        background: #eee;
+        border-radius: 3px;
+        color: #999;
+        height: 26px;
+        line-height: 26px;
+        padding: 3px 10px 3px 10px;
+        position: relative;
+      }
+    }
   }
 }
 
