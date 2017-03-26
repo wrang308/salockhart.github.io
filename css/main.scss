@@ -1,7 +1,163 @@
 ---
 ---
 
-@import 'variables';
+// Variables
+
+$main: #1a222c;
+$sec: #4B5664;
+$purple: #54516A;
+$light: #FFF;
+$cut: 768px;
+
+// Common
+
+@import url( 'https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: $main;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+    display: block;
+    line-height: 1;
+    letter-spacing: -.1rem;
+}
+
+h2 {
+    font-size: 40px;
+    display: block;
+    line-height: 1;
+    margin: 5px 0 10px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+.content {
+    background: $light;
+    padding: 20px 0 100px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.project-link {
+    display: block;
+    width: 100px;
+    margin: 10px 0;
+    padding: 5px;
+    color: $main;
+    background-color: transparent;
+    border: 1px solid $main;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out, border-color 0.3s ease-out;
+
+    &:hover {
+        background-color: $purple;
+        border-color: $purple;
+        color: #fff;
+        transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+    }
+
+    &:active {
+        background-color: $purple;
+        border-color: $purple;
+        color: #fff;
+        transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+    }
+}
+
+.footer {
+    background: $main;
+    padding: 10px 0;
+    text-align: center;
+    color: #FFF;
+
+    .love {
+        color: red;
+    }
+
+    a {
+        text-decoration: none;
+        margin: 0;
+        color: #FFF;
+
+        &:hover {
+            color: $sec;
+        }
+
+        &:active {
+            color: $sec;
+        }
+    }
+}
+
+// Pulse Animation
+
+@-webkit-keyframes pulse {
+    from {
+        -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        filter: alpha(opacity=40);
+        opacity: 0.4;
+        top: 0;
+    }
+
+    50% {
+        -ms-filter: none;
+        -webkit-filter: none;
+        filter: none;
+        opacity: 1;
+        top: -10px;
+    }
+
+    to {
+        -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        filter: alpha(opacity=40);
+        opacity: 0.4;
+        top: 0;
+    }
+}
+@keyframes pulse {
+    from {
+        -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        filter: alpha(opacity=40);
+        opacity: 0.4;
+        top: 0;
+    }
+
+    50% {
+        -ms-filter: none;
+        -webkit-filter: none;
+        filter: none;
+        opacity: 1;
+        top: -10px;
+    }
+
+    to {
+        -ms-filter:  "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+        filter: alpha(opacity=40);
+        opacity: 0.4;
+        top: 0;
+    }
+}
+
+
+// Default Layout
 
 #particles-js {
     display: block;
@@ -176,5 +332,25 @@
                 position: relative;
             }
         }
+    }
+}
+
+// Posts Layout
+
+.post-title {
+    background: $main;
+    color: #FFF;
+
+    h1 {
+        margin-left: 33.5px;
+    }
+}
+
+.post {
+    img {
+        max-width: 400px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 }
