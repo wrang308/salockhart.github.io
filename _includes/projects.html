@@ -1,29 +1,22 @@
 <div class="container projects">
     <h3>Featured Projects</h3>
-    <div class="row project">
-        <div class="col-md-6">
-            <img alt="mountains" src="{{ " /img/mountains.jpg " | prepend: site.baseurl }}" />
-        </div>
-        <div class="col-md-6">
-            <h4>Project Title</h5>
-        <ul>
-          <li>Featured Skills</li>
-        </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="project-link" href="#">Check it out</a>
-    </div>
-  </div>
-  <div class="row project">
-    <div class="col-md-6">
-      <img alt="mountains" src="{{ "/img/skate.jpg" | prepend: site.baseurl }}" />
-    </div>
-    <div class="col-md-6">
-      <h4>Project Title</h5>
-      <ul>
-        <li>Featured Skills</li>
-      </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="project-link" href="#">Check it out</a>
-    </div>
-  </div>
+    {% for post in site.posts%}
+        {% if post.categories contains "project" %}
+            <div class="row project">
+                <div class="col-md-6">
+                    <img alt="{{ post.image_alt }}" src="{{ post.image | prepend: site.baseurl }}" />
+                </div>
+                <div class="col-md-6">
+                    <h4>{{ post.title }}</h5>
+                    <ul>
+                        {% for tag in post.tags %}
+                            <li>{{ tag }}</li>
+                        {% endfor %}
+                    </ul>
+                    <p>{{ post.excerpt }}</p>
+                    <a class="project-link" href="{{ post.url }}">Check it out</a>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
 </div>
