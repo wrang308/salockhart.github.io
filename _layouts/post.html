@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
+<link rel="stylesheet" href="{{ "/css/post.css" | prepend: site.baseurl }}">
 
 <body>
-    {{ content }}
+    <div class="post-title">
+        <h1 class="site-title">{{site.username}}</h1>
+    </div>
+    <div class="content">
+        <section id="post">
+            <div class="container post">
+                <h2>{{ page.title }}</h2>
+                <img alt="{{ page.image_alt }}" src="{{ page.image | prepend: site.baseurl }}" />
+                {{ content }}
+            </div>
+        </section>
+    </div>
     {% include footer.html %}
 </body>
 
