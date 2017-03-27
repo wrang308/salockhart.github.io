@@ -1,16 +1,10 @@
 # Particle Jekyll Theme
 
-![](./particle.jpg)
-
 This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
 The Theme features:
 
-- Gulp
-- SASS
-- Sweet Scroll
 - Particle.js
-- BrowserSync
 - Font Awesome and Devicon icons
 - Google Analytics
 - Info Customization
@@ -18,7 +12,7 @@ The Theme features:
 ## Basic Setup
 
 1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Particle Theme](https://github.com/nrandecker/particle/fork)
+2. Fork the [Particle Theme](https://github.com/salockhart/salockhart.github.io/fork)
 3. Clone the repo you just forked.
 4. Edit `_config.yml` to personalize your site.
 
@@ -39,7 +33,9 @@ user_title: Anon Developer
 email: anon@anon.com
 twitter_username: lorem_ipsum
 github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+linkedin_username:  lorem_ipsum
+skills:
+ - devicon-css-class-here
 ```
 
 **Don't forget to change your url before you deploy your site!**
@@ -55,13 +51,11 @@ gplus_username:  lorem_ipsum
 
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-- Install [NodeJS](https://nodejs.org/)
-- Run `npm install`
-- Run `gulp`
+- Run `jekyll serve`
 
 ## Questions
 
-Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/issues/new).
+Having any issues file a [GitHub Issue](https://github.com/salockhart/salockhart.github.io/issues/new).
 
 ## License
 
@@ -69,6 +63,5 @@ This theme is free and open source software, distributed under the The MIT Licen
 
 ## Credits
 
-This theme was partially designed with the inspiration from these fine folks
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+This theme was forked from Nathan Randecker, and modified to take advantage of Jekyll and Liquid
+- [Nathan Randecker](https://github.com/nrandecker/particle)
