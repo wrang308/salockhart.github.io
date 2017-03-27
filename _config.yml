@@ -6,12 +6,30 @@ description: A blog about me.
 
 # User settings
 username: Alex Lockhart
-user_subtitle: Full Stack Software Developer
-user_description: Software Developer from Halifax, NS
+user_subtitle: Software Developer
+user_description: Full Stack Software Developer from Halifax, NS
 email: salexlockhart@gmail.com
 twitter_username: salexlockhart
 github_username:  salockhart
 linkedin_username:  salockhart
+
+skills:
+  - devicon-amazonwebservices-plain-wordmark
+  - devicon-android-plain
+  - devicon-apple-original
+  - devicon-atom-original
+  - devicon-css3-plain
+  - devicon-docker-plain
+  - devicon-firefox-plain
+  - devicon-git-plain
+  - devicon-heroku-original
+  - devicon-html5-plain
+  - devicon-javascript-plain
+  - devicon-mongodb-plain-wordmark
+  - devicon-nodejs-plain-wordmark
+  - devicon-react-original
+  - devicon-sass-original
+  -
 
 # Google-analytics
 google-analytics:
