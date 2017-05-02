@@ -34,9 +34,9 @@
         </section>
         <section id="projects">
             <div class="container projects">
-                <h3>Featured Projects</h3>
+                <h3>Featured</h3>
                 {% for post in site.posts%}
-                    {% if post.categories contains "project" and post.tags contains "featured" %}
+                    {% if post.tags contains "featured" %}
                         <div class="row project">
                             <div class="col-md-6">
                                 <img alt="{{ post.image_alt }}" src="{{ post.image | prepend: site.baseurl }}" />
