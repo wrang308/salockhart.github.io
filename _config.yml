@@ -33,7 +33,7 @@ skills:
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-98748109-1"
 
 sass:
   sass_dir: css
