@@ -6,6 +6,7 @@ tags: [featured, Node.js, Bootstrap, Express.js, Heroku, Slack, Github Pages]
 image: /img/clap-as-a-service.png
 image_alt: clap as a service
 code: https://github.com/salockhart/clap-as-a-service
+demo: http://alexlockhart.ca/clap-as-a-service/
 ---
 
 Clap (As A Service) was a project to create an API and front end that would allow the user to easily create [clap tweets](http://knowyourmeme.com/memes/clap-emoji-%F0%9F%91%8F).  This idea was then expanded on in a Slack app that accomplished the same thing.
