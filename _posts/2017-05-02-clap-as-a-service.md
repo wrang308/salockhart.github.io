@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Clap (As A Service)"
+author: Alex Lockhart
 categories: project
 tags: [featured, Node.js, Bootstrap, Express.js, Heroku, Slack, Github Pages]
 image: /img/clap-as-a-service.png

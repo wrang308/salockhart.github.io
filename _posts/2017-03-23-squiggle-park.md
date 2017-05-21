@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Squiggle Park"
+author: Alex Lockhart
 categories: experience
 tags: [featured, MongoDB, Express.js, React.js, Node.js, Unity3D, Google Cloud Platform]
 image: /img/squigglepark.jpg

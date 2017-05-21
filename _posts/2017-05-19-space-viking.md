@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Space Viking"
+author: Alex Lockhart
 categories: project
 tags: [featured, Node.js, React.js]
 image: /img/space-viking.png
