@@ -13,24 +13,6 @@ twitter_username: salexlockhart
 github_username:  salockhart
 linkedin_username:  salockhart
 
-skills:
-  - devicon-amazonwebservices-plain-wordmark
-  - devicon-android-plain
-  - devicon-apple-original
-  - devicon-atom-original
-  - devicon-css3-plain
-  - devicon-docker-plain
-  - devicon-firefox-plain
-  - devicon-git-plain
-  - devicon-heroku-original
-  - devicon-html5-plain
-  - devicon-javascript-plain
-  - devicon-mongodb-plain-wordmark
-  - devicon-nodejs-plain-wordmark
-  - devicon-react-original
-  - devicon-sass-original
-  -
-
 # Google-analytics
 google-analytics:
   id: "UA-98748109-1"
