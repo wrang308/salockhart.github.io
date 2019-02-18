@@ -4,7 +4,7 @@ title: "Css and Html Exercise"
 author: Markus Wrang
 categories: experience
 tags: [Css, html]
-image: /CssHtmlExercise.png
+image: /img/CssHtmlExercise.png
 image_alt: Css Html Exercise Image
 code: https://github.com/wrang308/CssHtmlExercise
 demo: https://wrang308.github.io/CssHtmlExercise/
